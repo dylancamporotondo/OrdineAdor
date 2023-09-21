@@ -45,7 +45,7 @@ namespace OrdineAdor
             this.button_Desktop.TabIndex = 0;
             this.button_Desktop.Text = "Desktop";
             this.button_Desktop.UseVisualStyleBackColor = true;
-            this.button_Desktop.Click += new System.EventHandler(this.button1_Click);
+            this.button_Desktop.Click += new System.EventHandler(this.button_Desktop_Click);
             // 
             // button_Documents
             // 
@@ -55,7 +55,7 @@ namespace OrdineAdor
             this.button_Documents.TabIndex = 1;
             this.button_Documents.Text = "My Documents";
             this.button_Documents.UseVisualStyleBackColor = true;
-            this.button_Documents.Click += new System.EventHandler(this.button2_Click);
+            this.button_Documents.Click += new System.EventHandler(this.button_Documents_Click);
             // 
             // button_Pictures
             // 
@@ -93,6 +93,7 @@ namespace OrdineAdor
             this.panel_FilesList.Name = "panel_FilesList";
             this.panel_FilesList.Size = new System.Drawing.Size(668, 426);
             this.panel_FilesList.TabIndex = 5;
+            this.panel_FilesList.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_FilesList_Paint);
             // 
             // Form1
             // 

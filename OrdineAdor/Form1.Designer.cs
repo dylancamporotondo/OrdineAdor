@@ -29,70 +29,82 @@ namespace OrdineAdor
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button_Desktop = new System.Windows.Forms.Button();
+            this.button_Documents = new System.Windows.Forms.Button();
+            this.button_Pictures = new System.Windows.Forms.Button();
+            this.button_Music = new System.Windows.Forms.Button();
+            this.button_Videos = new System.Windows.Forms.Button();
+            this.panel_FilesList = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // button1
+            // button_Desktop
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Desktop";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button_Desktop.Location = new System.Drawing.Point(12, 12);
+            this.button_Desktop.Name = "button_Desktop";
+            this.button_Desktop.Size = new System.Drawing.Size(93, 23);
+            this.button_Desktop.TabIndex = 0;
+            this.button_Desktop.Text = "Desktop";
+            this.button_Desktop.UseVisualStyleBackColor = true;
+            this.button_Desktop.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // button_Documents
             // 
-            this.button2.Location = new System.Drawing.Point(12, 41);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "My Documents";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button_Documents.Location = new System.Drawing.Point(12, 41);
+            this.button_Documents.Name = "button_Documents";
+            this.button_Documents.Size = new System.Drawing.Size(93, 23);
+            this.button_Documents.TabIndex = 1;
+            this.button_Documents.Text = "My Documents";
+            this.button_Documents.UseVisualStyleBackColor = true;
+            this.button_Documents.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button_Pictures
             // 
-            this.button3.Location = new System.Drawing.Point(12, 70);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Pictures";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_Pictures.Location = new System.Drawing.Point(12, 70);
+            this.button_Pictures.Name = "button_Pictures";
+            this.button_Pictures.Size = new System.Drawing.Size(93, 23);
+            this.button_Pictures.TabIndex = 2;
+            this.button_Pictures.Text = "Pictures";
+            this.button_Pictures.UseVisualStyleBackColor = true;
+            this.button_Pictures.Click += new System.EventHandler(this.button_Pictures_Click);
             // 
-            // button4
+            // button_Music
             // 
-            this.button4.Location = new System.Drawing.Point(12, 99);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(93, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Music";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button_Music.Location = new System.Drawing.Point(12, 99);
+            this.button_Music.Name = "button_Music";
+            this.button_Music.Size = new System.Drawing.Size(93, 23);
+            this.button_Music.TabIndex = 3;
+            this.button_Music.Text = "Music";
+            this.button_Music.UseVisualStyleBackColor = true;
+            this.button_Music.Click += new System.EventHandler(this.button_Music_Click);
             // 
-            // button5
+            // button_Videos
             // 
-            this.button5.Location = new System.Drawing.Point(12, 128);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(93, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Videos";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button_Videos.Location = new System.Drawing.Point(12, 128);
+            this.button_Videos.Name = "button_Videos";
+            this.button_Videos.Size = new System.Drawing.Size(93, 23);
+            this.button_Videos.TabIndex = 4;
+            this.button_Videos.Text = "Videos";
+            this.button_Videos.UseVisualStyleBackColor = true;
+            this.button_Videos.Click += new System.EventHandler(this.button_Videos_Click);
+            // 
+            // panel_FilesList
+            // 
+            this.panel_FilesList.Location = new System.Drawing.Point(111, 12);
+            this.panel_FilesList.Name = "panel_FilesList";
+            this.panel_FilesList.Size = new System.Drawing.Size(668, 426);
+            this.panel_FilesList.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel_FilesList);
+            this.Controls.Add(this.button_Videos);
+            this.Controls.Add(this.button_Music);
+            this.Controls.Add(this.button_Pictures);
+            this.Controls.Add(this.button_Documents);
+            this.Controls.Add(this.button_Desktop);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -102,11 +114,12 @@ namespace OrdineAdor
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button_Desktop;
+        private System.Windows.Forms.Button button_Documents;
+        private System.Windows.Forms.Button button_Pictures;
+        private System.Windows.Forms.Button button_Music;
+        private System.Windows.Forms.Button button_Videos;
+        private System.Windows.Forms.FlowLayoutPanel panel_FilesList;
     }
 }
 

@@ -89,9 +89,10 @@ namespace OrdineAdor
             // 
             // panel_FilesList
             // 
+            this.panel_FilesList.AutoScroll = true;
             this.panel_FilesList.Location = new System.Drawing.Point(111, 12);
             this.panel_FilesList.Name = "panel_FilesList";
-            this.panel_FilesList.Size = new System.Drawing.Size(668, 426);
+            this.panel_FilesList.Size = new System.Drawing.Size(857, 375);
             this.panel_FilesList.TabIndex = 5;
             this.panel_FilesList.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_FilesList_Paint);
             // 
@@ -99,7 +100,7 @@ namespace OrdineAdor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(980, 450);
             this.Controls.Add(this.panel_FilesList);
             this.Controls.Add(this.button_Videos);
             this.Controls.Add(this.button_Music);

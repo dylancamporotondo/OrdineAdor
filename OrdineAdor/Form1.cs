@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace OrdineAdor
 {
     public partial class Form1 : Form
     {
+        private void DisplayFiles(string filePath)
+        {
+            // prova
+        }
         public Form1()
         {
             InitializeComponent();

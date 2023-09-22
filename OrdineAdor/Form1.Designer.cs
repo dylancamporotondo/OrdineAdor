@@ -35,6 +35,7 @@ namespace OrdineAdor
             this.button_Music = new System.Windows.Forms.Button();
             this.button_Videos = new System.Windows.Forms.Button();
             this.panel_FilesList = new System.Windows.Forms.FlowLayoutPanel();
+            this.back_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_Desktop
@@ -90,17 +91,28 @@ namespace OrdineAdor
             // panel_FilesList
             // 
             this.panel_FilesList.AutoScroll = true;
-            this.panel_FilesList.Location = new System.Drawing.Point(111, 12);
+            this.panel_FilesList.Location = new System.Drawing.Point(111, 41);
             this.panel_FilesList.Name = "panel_FilesList";
             this.panel_FilesList.Size = new System.Drawing.Size(857, 375);
             this.panel_FilesList.TabIndex = 5;
             this.panel_FilesList.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_FilesList_Paint);
+            // 
+            // back_button
+            // 
+            this.back_button.Location = new System.Drawing.Point(875, 12);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(93, 23);
+            this.back_button.TabIndex = 6;
+            this.back_button.Text = "Back";
+            this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(980, 450);
+            this.Controls.Add(this.back_button);
             this.Controls.Add(this.panel_FilesList);
             this.Controls.Add(this.button_Videos);
             this.Controls.Add(this.button_Music);
@@ -122,6 +134,7 @@ namespace OrdineAdor
         private System.Windows.Forms.Button button_Music;
         private System.Windows.Forms.Button button_Videos;
         private System.Windows.Forms.FlowLayoutPanel panel_FilesList;
+        private System.Windows.Forms.Button back_button;
     }
 }
 

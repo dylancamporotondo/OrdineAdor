@@ -40,6 +40,8 @@ namespace OrdineAdor
                     newButton.TextAlign = ContentAlignment.MiddleLeft;
                     newButton.Padding = new Padding(24, 0, 0, 0);
                     panel_FilesList.Controls.Add(newButton);
+
+                    newButton.Click += button_Click_Open;
                 }
             }
         }
@@ -48,6 +50,24 @@ namespace OrdineAdor
             InitializeComponent();
             DisplayFiles(Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
 
+        }
+        private void button_Click_Open(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            string filePath = button.Name;
+
+            try
+            {
+                // If a directory clicked, reload list of files in new directory
+                DisplayFiles(filePath);
+            }
+            catch (Exception ex)
+            {
+                // If file clicked, open the file
+                var process = new System.Diagnostics.Process();
+                process.StartInfo = new System.Diagnostics.ProcessStartInfo() { UseShellExecute = true, FileName = filePath };
+                process.Start();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -83,6 +103,17 @@ namespace OrdineAdor
         private void panel_FilesList_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void back_button_Click(object sender, EventArgs e)
+        {
+            var previousFolder = this.currentLocation.Substring(0, this.currentLocation.LastIndexOf("\\"));
+            DisplayFiles(previousFolder);
         }
     }
 }

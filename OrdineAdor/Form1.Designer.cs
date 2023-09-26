@@ -36,56 +36,63 @@ namespace OrdineAdor
             this.button_Videos = new System.Windows.Forms.Button();
             this.panel_FilesList = new System.Windows.Forms.FlowLayoutPanel();
             this.back_button = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
             // button_Desktop
             // 
+            this.button_Desktop.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button_Desktop.Location = new System.Drawing.Point(12, 12);
             this.button_Desktop.Name = "button_Desktop";
             this.button_Desktop.Size = new System.Drawing.Size(93, 23);
             this.button_Desktop.TabIndex = 0;
             this.button_Desktop.Text = "Desktop";
-            this.button_Desktop.UseVisualStyleBackColor = true;
+            this.button_Desktop.UseVisualStyleBackColor = false;
             this.button_Desktop.Click += new System.EventHandler(this.button_Desktop_Click);
             // 
             // button_Documents
             // 
+            this.button_Documents.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button_Documents.Location = new System.Drawing.Point(12, 41);
             this.button_Documents.Name = "button_Documents";
             this.button_Documents.Size = new System.Drawing.Size(93, 23);
             this.button_Documents.TabIndex = 1;
             this.button_Documents.Text = "My Documents";
-            this.button_Documents.UseVisualStyleBackColor = true;
+            this.button_Documents.UseVisualStyleBackColor = false;
             this.button_Documents.Click += new System.EventHandler(this.button_Documents_Click);
             // 
             // button_Pictures
             // 
+            this.button_Pictures.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button_Pictures.Location = new System.Drawing.Point(12, 70);
             this.button_Pictures.Name = "button_Pictures";
             this.button_Pictures.Size = new System.Drawing.Size(93, 23);
             this.button_Pictures.TabIndex = 2;
             this.button_Pictures.Text = "Pictures";
-            this.button_Pictures.UseVisualStyleBackColor = true;
+            this.button_Pictures.UseVisualStyleBackColor = false;
             this.button_Pictures.Click += new System.EventHandler(this.button_Pictures_Click);
             // 
             // button_Music
             // 
+            this.button_Music.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button_Music.Location = new System.Drawing.Point(12, 99);
             this.button_Music.Name = "button_Music";
             this.button_Music.Size = new System.Drawing.Size(93, 23);
             this.button_Music.TabIndex = 3;
             this.button_Music.Text = "Music";
-            this.button_Music.UseVisualStyleBackColor = true;
+            this.button_Music.UseVisualStyleBackColor = false;
             this.button_Music.Click += new System.EventHandler(this.button_Music_Click);
             // 
             // button_Videos
             // 
+            this.button_Videos.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button_Videos.Location = new System.Drawing.Point(12, 128);
             this.button_Videos.Name = "button_Videos";
-            this.button_Videos.Size = new System.Drawing.Size(93, 23);
+            this.button_Videos.Size = new System.Drawing.Size(93, 24);
             this.button_Videos.TabIndex = 4;
             this.button_Videos.Text = "Videos";
-            this.button_Videos.UseVisualStyleBackColor = true;
+            this.button_Videos.UseVisualStyleBackColor = false;
             this.button_Videos.Click += new System.EventHandler(this.button_Videos_Click);
             // 
             // panel_FilesList
@@ -107,11 +114,28 @@ namespace OrdineAdor
             this.back_button.UseVisualStyleBackColor = true;
             this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(111, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(758, 20);
+            this.textBox1.TabIndex = 7;
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(12, 158);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(93, 235);
+            this.treeView1.TabIndex = 8;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(980, 450);
+            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.back_button);
             this.Controls.Add(this.panel_FilesList);
             this.Controls.Add(this.button_Videos);
@@ -123,6 +147,7 @@ namespace OrdineAdor
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -135,6 +160,8 @@ namespace OrdineAdor
         private System.Windows.Forms.Button button_Videos;
         private System.Windows.Forms.FlowLayoutPanel panel_FilesList;
         private System.Windows.Forms.Button back_button;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TreeView treeView1;
     }
 }
 

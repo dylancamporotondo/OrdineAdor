@@ -115,5 +115,10 @@ namespace OrdineAdor
             var previousFolder = this.currentLocation.Substring(0, this.currentLocation.LastIndexOf("\\"));
             DisplayFiles(previousFolder);
         }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
     }
 }

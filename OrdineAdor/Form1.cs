@@ -21,6 +21,8 @@ namespace OrdineAdor
             panel_FilesList.Controls.Clear();
             currentLocation = filePath;
 
+            textBox1.Text = currentLocation;
+
             for (int i = 0; i < filesList.Length - 1; i++)
             {
                 bool isHidden = ((File.GetAttributes(filesList[i]) & FileAttributes.Hidden) == FileAttributes.Hidden);
@@ -116,9 +118,9 @@ namespace OrdineAdor
             DisplayFiles(previousFolder);
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

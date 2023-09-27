@@ -289,7 +289,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="back_button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 28</value>
+    <value>28, 29</value>
   </data>
   <data name="back_button.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>

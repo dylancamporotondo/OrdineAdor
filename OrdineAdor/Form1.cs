@@ -122,5 +122,10 @@ namespace OrdineAdor
         {
             
         }
+
+        private void quit_Button_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

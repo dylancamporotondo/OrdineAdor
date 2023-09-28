@@ -38,6 +38,7 @@ namespace OrdineAdor
             this.panel_FilesList = new System.Windows.Forms.FlowLayoutPanel();
             this.back_button = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.quit_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_Desktop
@@ -95,9 +96,19 @@ namespace OrdineAdor
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // quit_Button
+            // 
+            this.quit_Button.BackColor = System.Drawing.Color.IndianRed;
+            this.quit_Button.ForeColor = System.Drawing.Color.BlanchedAlmond;
+            resources.ApplyResources(this.quit_Button, "quit_Button");
+            this.quit_Button.Name = "quit_Button";
+            this.quit_Button.UseVisualStyleBackColor = false;
+            this.quit_Button.Click += new System.EventHandler(this.quit_Button_Click);
             // 
             // Form1
             // 
@@ -105,6 +116,7 @@ namespace OrdineAdor
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ControlBox = false;
+            this.Controls.Add(this.quit_Button);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.back_button);
             this.Controls.Add(this.panel_FilesList);
@@ -132,6 +144,7 @@ namespace OrdineAdor
         private System.Windows.Forms.FlowLayoutPanel panel_FilesList;
         private System.Windows.Forms.Button back_button;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button quit_Button;
     }
 }
 

@@ -282,6 +282,9 @@
   <data name="&gt;&gt;panel_FilesList.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="back_button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="back_button.Location" type="System.Drawing.Point, System.Drawing">
     <value>1237, 15</value>
   </data>
@@ -335,6 +338,9 @@
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="quit_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
   <data name="quit_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

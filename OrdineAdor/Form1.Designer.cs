@@ -104,8 +104,8 @@ namespace OrdineAdor
             // quit_Button
             // 
             this.quit_Button.BackColor = System.Drawing.Color.IndianRed;
-            this.quit_Button.ForeColor = System.Drawing.Color.BlanchedAlmond;
             resources.ApplyResources(this.quit_Button, "quit_Button");
+            this.quit_Button.ForeColor = System.Drawing.Color.BlanchedAlmond;
             this.quit_Button.Name = "quit_Button";
             this.quit_Button.UseVisualStyleBackColor = false;
             this.quit_Button.Click += new System.EventHandler(this.quit_Button_Click);
